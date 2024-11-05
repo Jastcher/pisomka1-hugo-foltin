@@ -1,15 +1,13 @@
 'use client';
 
 import Typography from '@mui/material/Typography';
-import { useSession, signIn, signOut } from "next-auth/react"
+import { signOut } from "next-auth/react"
 import Button from '@mui/material/Button';
-import GoogleIcon from '@mui/icons-material/Google';
 import Box from '@mui/material/Box';
 
 //export const metadata = { title: "Prihlasenie | vlak"};
 
 export default function Logout() {
-  const { data: session } = useSession();
 
   return (
     <Box
